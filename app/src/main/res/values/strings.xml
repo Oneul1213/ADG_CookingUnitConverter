@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Cooking Unit Converter</string>
+    <string name="cooking_unit_converter">Cooking Unit Converter</string>
+    <string name="millis_or_gram">Millis or gram</string>
+    <string name="millis_to_oz">Millis to oz</string>
+    <string name="millis">millis</string>
+    <string name="gram_to_cup">Gram to cup</string>
+    <string name="gram">gram</string>
 </resources>
