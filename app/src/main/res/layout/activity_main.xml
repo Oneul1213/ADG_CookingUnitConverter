@@ -8,21 +8,12 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cooking_unit_converter"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/millis_or_gram"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/millis_or_gram"
-        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
@@ -36,30 +27,40 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/millis_textview"
+        android:id="@+id/millis_or_gram_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/millis"
+        tools:text="10.0 millis"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/millis_to_oz_switch"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Switch
-        android:id="@+id/grams_to_cup"
+        android:id="@+id/grams_to_cup_switch"
         android:layout_width="0dp"
         android:layout_height="16dp"
         android:text="@string/gram_to_cup"
         android:checked="true"
-        app:layout_constraintTop_toBottomOf="@id/millis_textview"
+        app:layout_constraintTop_toBottomOf="@id/millis_or_gram_text_view"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
+        android:id="@+id/gram_or_cup_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/gram"
+        tools:text="10.0 grams"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/grams_to_cup"
+        app:layout_constraintTop_toBottomOf="@id/grams_to_cup_switch"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        app:layout_constraintTop_toBottomOf="@id/gram_or_cup_text_view"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
