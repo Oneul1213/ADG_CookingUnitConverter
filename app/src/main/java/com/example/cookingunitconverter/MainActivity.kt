@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun convert() {
-        val millisOrGram = binding.millisOrGram.text.toString().toDoubleOrNull()
+        val millisOrGram = binding.millisOrGramEditText.text.toString().toDoubleOrNull()
 
         if (millisOrGram == null || millisOrGram == 0.0) {
             displayConvertResult(0.0)
@@ -33,13 +33,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun displayConvertResult(text: Double) {
-        val millisOrOz: String = if (binding.millisToOzSwitch.isChecked) getString(R.string.oz, (text * 0.03).toString())
-        else getString(R.string.millis, text.toString())
+        val millisOrOz: String =
+            if (binding.millisToOzSwitch.isChecked) getString(R.string.oz, (text * 0.03).toString())
+            else getString(R.string.millis, text.toString())
 
         binding.millisOrGramTextView.text = millisOrOz
 
-        val gramOrCup = if (binding.gramsToCupSwitch.isChecked) getString(R.string.cup, (text * 128).toString())
-        else getString(R.string.gram, text.toString())
+        val gramOrCup =
+            if (binding.gramsToCupSwitch.isChecked) getString(R.string.cup, (text * 128).toString())
+            else getString(R.string.gram, text.toString())
 
         binding.gramOrCupTextView.text = gramOrCup
     }
