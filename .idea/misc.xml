@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/bbtfl/AndroidStudioProjects/CookingUnitConverter/app/src/main/res/drawable/dimens.xml" value="0.308" />
+        <entry key="..\:/Users/bbtfl/AndroidStudioProjects/CookingUnitConverter/app/src/main/res/drawable/ic_cup.xml" value="0.308" />
+        <entry key="..\:/Users/bbtfl/AndroidStudioProjects/CookingUnitConverter/app/src/main/res/drawable/ic_input.xml" value="0.308" />
+        <entry key="..\:/Users/bbtfl/AndroidStudioProjects/CookingUnitConverter/app/src/main/res/drawable/ic_oz.xml" value="0.308" />
         <entry key="..\:/Users/bbtfl/AndroidStudioProjects/CookingUnitConverter/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
       </map>
     </option>
